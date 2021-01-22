@@ -1,5 +1,9 @@
 // repository link:  https://github.com/elias-soykat/assignment.js
 
+// few deatails change after submit my assignment.. so please chack my repository link -thnak you
+
+
+
 //problem one
 
 function kilometerToMeter(kilometer){
@@ -52,15 +56,12 @@ if(days > 0){
 
 // problem four
 
-var megaFriend = ["jamal", "kamal", "rahim", "karim", "jabbar", "sofiqul"];
-var maximum = megaFriend[0];
+var names = ['Kamal', 'Jamal', 'Salam', 'Jabbar', 'Rofiqul'];
 
-for(var i = 0; i < megaFriend; i++){
-    var element = megaFriend[i];
-    if(element > maximum){
-        maximum = element;
-    }
-    else{ return maximum
+function megaFriend(heighest){
 
-    }
+    var max = heighest[0].length;
+    heighest.map(v => max = Math.max(max, v.length));
+    result = heighest.filter(v => v.length == max);
+    return result;
 }
